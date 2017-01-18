@@ -34,3 +34,10 @@ class Property_Management(object):
 	def Property_Type(self):
 		""" Return type of Property"""
 		pass
+
+class Apartment(Property_Management):
+	Deposit = 50000
+	No_of_Rooms = 5
+	
+	def Property_Type(self):
+		return 'Apartment'
