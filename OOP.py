@@ -41,3 +41,10 @@ class Apartment(Property_Management):
 	
 	def Property_Type(self):
 		return 'Apartment'
+
+class Maisonettes(Property_Management):
+	Deposit = 40000
+	No_of_Rooms = 4
+	
+	def Property_Type(self):
+		return 'Maisonette'
