@@ -21,4 +21,11 @@ class Property_Management(object):
 		elif self.Availability_Status is not None:
 			
 			return (10000 * self.No_of_Rooms) + self.Deposit
+
+	def Compute_PropertyRentingPrice(self):
+		""" Returns the Full Contract Amount to be paid to the premise owner"""
+		if self.Availability_Status is None:
 			
+			return 36 * (7000 * self.No_of_Rooms)
+		else:
+			return 0.0
