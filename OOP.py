@@ -29,3 +29,8 @@ class Property_Management(object):
 			return 36 * (7000 * self.No_of_Rooms)
 		else:
 			return 0.0
+
+	@abstractmethod
+	def Property_Type(self):
+		""" Return type of Property"""
+		pass
