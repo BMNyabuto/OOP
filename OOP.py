@@ -11,4 +11,14 @@ class Property_Management(object):
 		"""Return a new Car Object"""
 		self.location = location            
 		self.Availability_Status = Availability_Status
-		
+	
+	def Compute_ToLetPrices(self):
+		""" Returns the monthly Letting amount to be paid by a customer"""
+		if self.Availability_Status is None:
+			
+			return 10000 * self.No_of_Rooms
+			
+		elif self.Availability_Status is not None:
+			
+			return (10000 * self.No_of_Rooms) + self.Deposit
+			
